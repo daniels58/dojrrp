@@ -18,4 +18,4 @@ async def on_message(message):
         msg = 'Hello (0.author.mention) How are you'.format(message)
         await client.send_message(message.channel, msg)
 
-client.run(os.getenv('TOKEN;)
+client.run(os.getenv('TOKEN'))
