@@ -15,7 +15,7 @@ async def on_ready():
 @Client.event
 async def on_message(message):
     if message.content.startswith('.hello'):
-        msg = 'Hello (0.author.mention) How are you'.format(message)
+        msg = 'Hello {0.author.mention} How are you'.format(message)
         await client.send_message(message.channel, msg)
 
 client.run(os.getenv('TOKEN'))
